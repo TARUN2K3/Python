@@ -7,46 +7,46 @@
 5. Hybrid Inheritance : Combination of two or more type of Inheritance (Multiple + Multilevel)
 '''
 # Single Inheritance
-# class parent:
-#     def __init__(self):
-#         print("Its a parent class")
-# class child(parent):
-#     def __init__(self):
-#         super().__init__()
-#         print("it's a child class")
+class parent:
+    def __init__(self):
+        print("Its a parent class")
+class child(parent):
+    def __init__(self):
+        super().__init__()
+        print("it's a child class")
 
-# c = child()
+c = child()
 
 # # Multiple Inheritance
 
-# class Father:
-#     def __init__(self):
-#         print("it's a Father class")
-# class Mother:
-#     def __init__(self):
-#         print("It's a Mother calss")
-# class child(Father, Mother):
-#     def __init__(self):
-#         Father.__init__(self)
-#         Mother.__init__(self)
-#         print("It's a Child class")
+class Father:
+    def __init__(self):
+        print("it's a Father class")
+class Mother:
+    def __init__(self):
+        print("It's a Mother calss")
+class child(Father, Mother):
+    def __init__(self):
+        Father.__init__(self)
+        Mother.__init__(self)
+        print("It's a Child class")
 
-# c = child()
+c = child()
 
-# Multilevel Inhertance
-# class granparent:
-#     def __init__(self):
-#         print("its a Grand parent class")
-# class parent(granparent):
-#     def __init__(self):
-#         super().__init__()
-#         print("its a parent class")
-# class child(parent):
-#     def __init__(self):
-#         super().__init__()
-#         print("its a child class")
+# Multilevel Inheritance
+class granparent:
+    def __init__(self):
+        print("its a Grand parent class")
+class parent(granparent):
+    def __init__(self):
+        super().__init__()
+        print("its a parent class")
+class child(parent):
+    def __init__(self):
+        super().__init__()
+        print("its a child class")
 
-# c = child()
+c = child()
 
 # Hierarchical inheritance
 class parent:
@@ -67,3 +67,28 @@ class child3(parent):
 c1 = child1()
 c2 = child2()
 c3 = child3()
+
+# Hybrid Inheritance
+class Person:
+    def info(self):
+        print("I am a person.")
+
+
+class Student(Person):
+    def study(self):
+        print("I study subjects.")
+
+
+class Athlete(Person):
+    def play(self):
+        print("I play sports.")
+
+class ScholarAthlete(Student, Athlete):
+    def talent(self):
+        print("I balance both study and sports!")
+
+sa = ScholarAthlete()
+sa.info()     
+sa.study()    
+sa.play()     
+sa.talent()   
