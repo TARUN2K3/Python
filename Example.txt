@@ -1,2 +1,5 @@
-This is the Example File for Data File Handing Topic in Python.
-This is the Second line of That File
+Hii, This is Tarun kumar sharma
+ this is new content for checking r+ mode
+ Appended Text
+The new Appended TextThe new Appended Text
+This is appended in binary mode
