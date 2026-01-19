@@ -16,7 +16,7 @@ function1(1,2,3,3)
 
 def function2(a,b,*xyz,c,d):
     print(a,b,xyz,c,d)
-
+ 
 function2(1,2,[9,8,7],c=1,d=2)
 
 

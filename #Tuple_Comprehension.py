@@ -1,7 +1,7 @@
 #Tuple_Comprehension
 
 #Syntax
-#T = (*(exp for item in Iterable),) #* use for unpacking otherwise it will create Generator object
+T = (*(exp for item in Iterable),) #* use for unpacking otherwise it will create Generator object
 
 #Method 1
 

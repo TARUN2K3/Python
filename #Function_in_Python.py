@@ -16,3 +16,5 @@
 def greet(name):
     print(f"Hii,{name}")
 greet("tarun")
+# Ques: What is the function of return statement in python?
+''' return statement send avlue back to the function of the programm that called it and terminate the function execution '''
